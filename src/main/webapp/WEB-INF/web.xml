@@ -1,18 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
-
+<web-app version="3.0" xmlns="http://java.sun.com/xml/ns/javaee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" metadata-complete="false" 
+    xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" >
+ 
 	<display-name> Socket - Implementation </display-name>
 
 
-	<!-- Welcome file lists -->
+	<!-- Servlets -->
 	
+	<!-- 
+		Here we are using the Servlet API version 3 :  
+		This helps us in defing the servlet mappings and url patterns with annotations
+	-->
+	
+	<!-- 
+	<servlet>
+		<servlet-name>homeServlet</servlet-name>
+		<servlet-class>com.socketimpl.rps.servlets.HomeServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>homeServlet</servlet-name>
+		<url-pattern>/home</url-pattern>
+	</servlet-mapping>
+	 -->
+	 
+
+	<!-- Welcome file lists -->
 	<welcome-file-list>
 		<welcome-file>index.jsp</welcome-file>
 		<welcome-file>default.jsp</welcome-file>
 		<welcome-file>index.html</welcome-file>
 	</welcome-file-list>
-	
 	
 </web-app>
